@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/shopifyweb.svg" />
       </Head>
       <header className={styles.header}>
-        <h1>Welcome to Michael's Shopify GPT3 App</h1>
+        <h1>Welcome to the AI Genie Response App</h1>
       </header>
       <main className={styles.main}>
         <Instructions />
