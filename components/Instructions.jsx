@@ -5,7 +5,7 @@ const Instructions = () => {
     return(
         <div className={styles.instructions}>
             <div>
-                <h2>Nice to meet you!</h2>
+                <h2>Nice to meet you 👋</h2>
                 <p>My name is <strong>Coco</strong> and I am an AI genie.</p>
                 <p>In this text box below you may enter a prompt or ask me a question.</p>
                 <p>{`For instance, you may ask, "what was the motif in Franz Kafka's,`} <em>Metamorphosis</em>{`?"`}</p>
