@@ -12,6 +12,7 @@
   align-items: center;
   max-height: 10vh;
   border-bottom: 1px solid #eaeaea;
+  background-color:rgb(95, 160, 146);
 }
 .instructions {
   display: flex;
@@ -26,11 +27,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color:cornsilk;
 }
  
+.input {
+  min-width: 25vw;
+  min-height: 3vh;
+}
+
 .form {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.buttonspacing {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formbutton {
+  padding: 2.5%;
+  background-color: #96bf48;
+  font-weight: bold;
 }
 
 .response {
@@ -54,10 +78,11 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 2.5rem;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color:rgb(95, 160, 146);
 }
 
 .footer a {

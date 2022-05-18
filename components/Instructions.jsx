@@ -7,13 +7,11 @@ const Instructions = () => {
             <div>
                 <h2>Nice to meet you!</h2>
                 <p>My name is <strong>Coco</strong> and I am an AI genie.</p>
-                <p>Below you will find a text box. In this text box you may enter a prompt or ask me a question.</p>
-                <p>{`For instance, you may ask me, "what was the motif in Franz Kafka's,`} <em>Metamorphosis</em>{`?"`}</p>
-                <p>{`Another example of what you may ask me is "how tall is Michael Jordan?"`}</p>
-                <p>Or ask me to write an essay about Radiohead.</p>
-            </div>
-            <div>
-                <h3>Go on, ask me something...</h3>
+                <p>In this text box below you may enter a prompt or ask me a question.</p>
+                <p>{`For instance, you may ask, "what was the motif in Franz Kafka's,`} <em>Metamorphosis</em>{`?"`}</p>
+                <p>If you are looking to become an online merchant, ask me how to start a shop on Shopify.</p>
+                <p>I can even write you an essay about Radiohead.</p>
+                <h3>Go ahead, give it a try!</h3>
             </div>
         </div>
     )

@@ -51,14 +51,19 @@ const Main =  () => {
         <div>
             <div className={styles.form}>
                 <form onSubmit={handleSubmit}>
+                <div className={styles.formspacing}>
                 <input 
+                        className={styles.input}
                         type="text"
                         name="prompt"
                         placeholder="Enter Prompt"
                         value={formValues.prompt}
                         onChange={handleChange}
                     />
+                </div>
+                <div className={styles.buttonspacing}>
                 <button className={styles.formbutton}>Submit</button>
+                </div>
                 </form>
             </div>
 
