@@ -2,12 +2,51 @@
   padding: 0 2rem;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+.p {
+  font-size: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 10vh;
+  border-bottom: 1px solid #eaeaea;
+}
+.instructions {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.response {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2% 7.5% 2% 7.5%;
+}
+.response h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.response h4 {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -105,7 +144,6 @@
 
 .logo {
   height: 1em;
-  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {

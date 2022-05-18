@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import OpenAI from 'openai-api';
+import styles from '../styles/Home.module.css'
 
 const initialValues = {
     prompt: ''
@@ -21,7 +22,7 @@ const Main =  () => {
         const gptResponse = await openai.complete({
               engine: 'text-curie-001',
               prompt: formValues.prompt,
-              maxTokens: 50,
+              maxTokens: 180,
               temperature: 0.7,
               topP: 1,
               presencePenalty: 0,
@@ -29,7 +30,6 @@ const Main =  () => {
               bestOf: 1,
               n: 1
           });
-          console.log(gptResponse.data.choices[0].text)
             setGenerated([{
                 prompt: formValues.prompt,
                 response: gptResponse.data.choices[0].text
@@ -48,24 +48,24 @@ const Main =  () => {
     }, [])
 
     return(
-
         <div>
-            Main
-            <form onSubmit={handleSubmit}>
-            <input 
-                    type="text"
-                    name="prompt"
-                    placeholder="Enter Prompt"
-                    value={formValues.prompt}
-                    onChange={handleChange}
-                />
-            <button >Submit</button>
-            </form>
+            <div className={styles.form}>
+                <form onSubmit={handleSubmit}>
+                <input 
+                        type="text"
+                        name="prompt"
+                        placeholder="Enter Prompt"
+                        value={formValues.prompt}
+                        onChange={handleChange}
+                    />
+                <button className={styles.formbutton}>Submit</button>
+                </form>
+            </div>
 
-        <section>
+        <section className={styles.response}>
             {generated.map((res, index) => (
                 <article key={index}>
-                    <h2>{res.prompt.toUpperCase()}</h2>
+                    <h4>{res.prompt.toUpperCase()}</h4>
                     <p>{res.response}</p>
                 </article>
             ))}
