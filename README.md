@@ -13,3 +13,5 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## This app was created for an internship application [NOT INTENDED FOR REGULAR USAGE]
+
+Contact me @ michael.enslein@gmail.com
