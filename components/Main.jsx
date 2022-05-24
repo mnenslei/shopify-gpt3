@@ -36,6 +36,13 @@ const Main =  () => {
             } ,...generated])
           }
           
+        const handleRefresh = (e) => {
+            e.preventDefault();
+            setGenerated([{
+                prompt: '',
+                response: ''
+            }])
+        }
 
     useEffect(() => {
         axios.get('/api/apikey')
@@ -63,6 +70,7 @@ const Main =  () => {
                 </div>
                 <div className={styles.buttonspacing}>
                 <button className={styles.formbutton}>Submit</button>
+                <button onClick={handleRefresh} className={styles.refreshformbutton}>Refresh</button>
                 </div>
                 </form>
             </div>
