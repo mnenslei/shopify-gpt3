@@ -42,6 +42,9 @@ const Main =  () => {
                 prompt: '',
                 response: ''
             }])
+            setFormValues({
+                prompt: ''
+            })
         }
 
     useEffect(() => {
